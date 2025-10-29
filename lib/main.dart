@@ -33,13 +33,36 @@ class MyFirstWidget extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceAround,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          Text("En Filas"),
           Container(width: 50, height: 50, color: Colors.red),
           Container(width: 100, height: 100, color: Colors.blue),
           Container(width: 150, height: 150, color: Colors.green),
           Column(
-            
+
             children: [
-              Text('Iconos'),
+              Text('Iconos en columnas'),
+              Icon(Icons.home, color: Colors.amber, size: 50),
+              Icon(Icons.android, color: Colors.blue, size: 50,),
+              Icon(Icons.build, color: Colors.green, size: 50,),
+              Icon(Icons.phone, color: Colors.red, size: 50,)
+
+            ],
+          ),
+           Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              Text('Iconos en columnas'),
+              Icon(Icons.home, color: Colors.amber, size: 50),
+              Icon(Icons.android, color: Colors.blue, size: 50,),
+              Icon(Icons.build, color: Colors.green, size: 50,),
+              Icon(Icons.phone, color: Colors.red, size: 50,)
+
+            ],
+          ),
+          Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('Iconos en columnas'),
               Icon(Icons.home, color: Colors.amber, size: 50),
               Icon(Icons.android, color: Colors.blue, size: 50,),
               Icon(Icons.build, color: Colors.green, size: 50,),
